@@ -9,6 +9,10 @@
 .heroes li {
   position: relative;
   cursor: pointer;
+  display: flex; /* ใช้ Flexbox */
+  align-items: center; /* จัดแนวให้อยู่ตรงกลางในแนวแกน Y */
+  justify-content: space-between; /* เว้นระยะห่างระหว่าง <a> และ <button> */
+  padding: 0.5em;
 }
 
 .heroes li:hover {
@@ -19,7 +23,7 @@
   color: #333;
   text-decoration: none;
   background-color: #EEE;
-  margin: .5em;
+  margin: 0;
   padding: .3em 0;
   height: 1.6em;
   border-radius: 4px;
@@ -52,4 +56,16 @@
   text-align: right;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
+}
+
+.delete {
+  background: none;
+  border: none;
+  color: #f44336;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.magin-right {
+  margin-right: 1rem;
 }
